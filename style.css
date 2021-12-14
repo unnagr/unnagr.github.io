@@ -1,0 +1,139 @@
+/* Personal Page */
+
+.intro {
+    line-height: 25px;
+    padding: 10em 5em;
+    display: flex;
+    align-items: center;
+}
+
+.intro img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.text {
+    padding-left: 3em;
+}
+
+.text p {
+    padding-right: 10em;
+}
+
+
+/* Individual Project page */
+
+.cite {
+    width: 60%;
+    margin: auto;
+    background-color: #F8F9F9;
+    padding: 30px 30px;
+    border-radius: 10px;
+    position: fixed;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    opacity: none;
+    transition: top 0.5s ease;
+    z-index: 1000;
+}
+
+.cite h2 {
+    padding-bottom: 20px;
+}
+
+.citing-open {
+    top: 15%;
+    opacity: 1;
+}
+
+.cite button {
+    margin-top: 10px;
+    padding: 10px 15px;
+}
+
+.guide {
+    display: none;
+}
+
+.portfolio {
+    margin-top: 60px;
+}
+
+.portfolio h1,
+.portfolio p {
+    text-align: center;
+}
+
+form {
+    /*border: 1px solid black;*/
+    padding: 60px 30px;
+}
+
+form div {
+    width: 70%;
+    margin: auto;
+}
+
+form input {
+    padding: 7px;
+    width: 80%;
+}
+
+label {
+    font-weight: bold;
+}
+
+button {
+    padding: 7px 15px;
+    background-color: lightcoral;
+    border: 1px solid lightcoral;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: coral;
+}
+
+.chart-container {
+    position: relative;
+    width: 80vw;
+    margin: 0px auto 200px;
+}
+
+
+/* media quires */
+
+@media screen and (max-width:1024px) {
+    .intro {
+        padding: 2em;
+        flex-direction: column;
+    }
+    .intro img {
+        width: 200px;
+        height: 200px;
+    }
+    .text {
+        width: 100%;
+        padding-left: 0em;
+        text-align: center;
+    }
+    .text p {
+        padding: 0em 5em;
+    }
+}
+
+@media screen and (max-width:768px) {
+    form div {
+        width: 100%;
+    }
+    form input {
+        width: 50%;
+    }
+    .text p {
+        padding: 0em 1em;
+    }
+}
